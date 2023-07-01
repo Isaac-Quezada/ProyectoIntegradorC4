@@ -1,4 +1,4 @@
-### UTPL
+**UTPL**
 ## Proyecto Integrador Grupo 
 
 En el siguiente repositorio se adjuntaron las actividades desarrolladas durante el proyecto integrador y el estudio de las asignaturas de Base de datos avanzada y Programación Avanzada de la carrera de Computación de la Universidad Técnica Particular de Loja.
