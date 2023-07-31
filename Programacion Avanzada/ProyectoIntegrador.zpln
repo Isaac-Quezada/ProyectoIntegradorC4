@@ -1,0 +1,733 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%mysql\nshow databases",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T00:42:27-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Database": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Database",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Database\nBimestral\nINTEGRADOR\nbasedatos\ninformation_schema\nmydb\nmysql\nperformance_schema\nsys\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690155663944_1789654494",
+      "id": "paragraph_1689644869403_1771812335",
+      "dateCreated": "2023-07-23T18:41:03-0500",
+      "dateStarted": "2023-07-31T00:42:27-0500",
+      "dateFinished": "2023-07-31T00:42:27-0500",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:500"
+    },
+    {
+      "text": "%mysql\nuse basedatos",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T00:42:27-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690155663945_333328482",
+      "id": "paragraph_1689644881932_394929669",
+      "dateCreated": "2023-07-23T18:41:03-0500",
+      "dateStarted": "2023-07-31T00:42:27-0500",
+      "dateFinished": "2023-07-31T00:42:27-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:501"
+    },
+    {
+      "text": "%mysql\nSELECT * FROM encuesta;\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T00:42:29-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "id_encuesta": "string",
+                      "mes": "string",
+                      "codigo_ciudad": "string",
+                      "num_eliminacion_basura": "string",
+                      "num_servicio_higienico": "string",
+                      "num_tipo_vivienda": "string",
+                      "num_inst_sanitaria": "string",
+                      "num_servicio_ducha": "string",
+                      "num_via_acceso": "string",
+                      "num_tipo_alumbrado": "string",
+                      "num_material_piso": "string",
+                      "num_material_paredes": "string",
+                      "num_metodo_cocina": "string",
+                      "alternativa_servicio_higienico_num_alt_servicio_higienico": "string",
+                      "num_obtencion_agua": "string",
+                      "num_material_techo": "string",
+                      "tenecia_vivienda": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "id_encuesta\tmes\tcodigo_ciudad\tnum_eliminacion_basura\tnum_servicio_higienico\tnum_tipo_vivienda\tnum_inst_sanitaria\tnum_servicio_ducha\tnum_via_acceso\tnum_tipo_alumbrado\tnum_material_piso\tnum_material_paredes\tnum_metodo_cocina\talternativa_servicio_higienico_num_alt_servicio_higienico\tnum_obtencion_agua\tnum_material_techo\ttenecia_vivienda\n1\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n2\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t3\t0\t1\t1\t4\n3\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n4\tmarzo\t10150\t2\t3\t1\t0\t2\t4\t1\t1\t1\t1\t0\t1\t2\t5\n5\tenero\t10150\t2\t1\t2\t0\t1\t3\t1\t2\t1\t1\t0\t1\t1\t5\n6\tmarzo\t10150\t1\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n7\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t2\t4\n8\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n9\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n10\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t5\n11\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t6\t1\n12\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n13\tenero\t10150\t2\t2\t1\t0\t1\t1\t1\t4\t1\t1\t0\t3\t3\t4\n14\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t6\t1\n15\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n16\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n17\tenero\t10150\t2\t1\t5\t0\t1\t1\t1\t7\t4\t1\t0\t3\t3\t1\n18\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t1\n19\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n20\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t4\t4\t1\t0\t1\t3\t1\n21\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n22\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n23\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n24\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n25\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n26\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t1\n27\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n28\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n29\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t4\t1\t1\t0\t1\t2\t1\n30\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t3\t1\t0\t1\t3\t1\n31\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n32\tmarzo\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t5\n33\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n34\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n35\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t3\n36\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n37\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n38\tmarzo\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t3\t1\t0\t1\t6\t5\n39\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n40\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t3\t1\n41\tmarzo\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t1\n42\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n43\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n44\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t6\t1\n45\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t7\t7\t1\t0\t1\t3\t4\n46\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n47\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n48\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t2\t4\n49\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n50\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n51\tmarzo\t10150\t2\t2\t1\t0\t1\t3\t1\t1\t3\t2\t0\t1\t4\t4\n52\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n53\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n54\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n55\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t4\n56\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n57\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n58\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n59\tmarzo\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t6\t1\n60\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n61\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n62\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t3\n63\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n64\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t1\t1\n65\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t1\t1\t0\t1\t1\t1\n66\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n67\tenero\t10150\t2\t5\t4\t1\t3\t3\t1\t4\t4\t1\t3\t1\t3\t5\n68\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t1\n69\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n70\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t4\n71\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n72\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t4\t1\t1\t0\t1\t3\t1\n73\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t2\t1\t4\t0\t1\t6\t1\n74\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n75\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t4\n76\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n77\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n78\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t2\t1\t1\t0\t1\t1\t1\n79\tenero\t10150\t3\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n80\tenero\t10150\t2\t5\t5\t0\t3\t3\t1\t7\t4\t1\t2\t7\t3\t1\n81\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n82\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n83\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t6\t1\n84\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n85\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n86\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t5\n87\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t3\t1\t0\t1\t6\t1\n88\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n89\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t4\t4\n90\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n91\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n92\tenero\t10150\t2\t1\t2\t0\t1\t1\t2\t4\t1\t1\t0\t1\t6\t1\n93\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n94\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n95\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n96\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n97\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n98\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n99\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n100\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n101\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t3\t1\t0\t1\t4\t4\n102\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n103\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n104\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t4\n105\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n106\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t6\n107\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n108\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t3\n109\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n110\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n111\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n112\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n113\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n114\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n115\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t2\t1\t0\t1\t2\t1\n116\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t4\n117\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n118\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t3\t1\t0\t1\t4\t1\n119\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n120\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n121\tfebrero\t10150\t2\t1\t3\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n122\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n123\tfebrero\t10150\t2\t1\t3\t0\t2\t1\t1\t4\t1\t1\t0\t1\t2\t5\n124\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n125\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n126\tfebrero\t10150\t2\t1\t2\t0\t1\t3\t1\t2\t1\t1\t0\t1\t1\t1\n127\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n128\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n129\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t2\t5\n130\tfebrero\t10150\t2\t1\t4\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t6\n131\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n132\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t4\n133\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t4\t4\n134\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n135\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n136\tmarzo\t10150\t3\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t4\t4\n137\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n138\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n139\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n140\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t3\t5\n141\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t5\n142\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t4\n143\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t3\t0\t1\t1\t4\n144\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n145\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n146\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n147\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n148\tfebrero\t10150\t2\t3\t2\t0\t1\t1\t1\t2\t1\t3\t0\t1\t1\t4\n149\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n150\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n151\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n152\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n153\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n154\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t3\t3\t0\t1\t4\t1\n155\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n156\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n157\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t3\t1\t0\t1\t6\t1\n158\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n159\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n160\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n161\tenero\t10150\t2\t1\t3\t0\t1\t1\t1\t1\t1\t1\t0\t1\t3\t1\n162\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n163\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n164\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n165\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n166\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n167\tfebrero\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t1\n168\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n169\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n170\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n171\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t3\t1\t0\t1\t2\t4\n172\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n173\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t5\t1\t1\t0\t1\t2\t4\n174\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n175\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t1\n176\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t3\t0\t1\t1\t4\n177\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n178\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n179\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n180\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n181\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n182\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n183\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n184\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t5\n185\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n186\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t5\n187\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n188\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t3\n189\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n190\tenero\t10150\t2\t2\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n191\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n192\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n193\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n194\tenero\t10150\t2\t1\t4\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t6\n195\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n196\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t3\n197\tenero\t10150\t2\t2\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t1\n198\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t2\t1\t0\t1\t4\t4\n199\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n200\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n201\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n202\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n203\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n204\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n205\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n206\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n207\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t3\n208\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n209\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n210\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n211\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n212\tfebrero\t10150\t2\t1\t3\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t3\n213\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n214\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n215\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n216\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n217\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n218\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n219\tfebrero\t10150\t2\t1\t3\t0\t2\t1\t1\t2\t1\t1\t0\t1\t6\t1\n220\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n221\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n222\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n223\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n224\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t5\n225\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n226\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n227\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n228\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n229\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t5\n230\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n231\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n232\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n233\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t5\n234\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n235\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n236\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n237\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t4\t4\n238\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n239\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n240\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n241\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n242\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n243\tmarzo\t10150\t1\t1\t4\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n244\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n245\tmarzo\t10150\t2\t1\t3\t0\t1\t1\t1\t4\t1\t1\t0\t1\t1\t5\n246\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n247\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n248\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n249\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n250\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t5\n251\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t1\n252\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n253\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n254\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n255\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t5\n256\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t5\n257\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n258\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n259\tenero\t10150\t2\t1\t3\t0\t1\t1\t1\t2\t1\t4\t0\t1\t1\t1\n260\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n261\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n262\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n263\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n264\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n265\tmarzo\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t1\t4\n266\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t5\n267\tfebrero\t10150\t1\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t5\n268\tfebrero\t10150\t2\t1\t3\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n269\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n270\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n271\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n272\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t4\n273\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n274\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n275\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t4\n276\tmarzo\t10150\t2\t1\t4\t0\t1\t1\t1\t1\t1\t1\t0\t1\t3\t4\n277\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n278\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n279\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n280\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t1\n281\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t4\t3\t1\t0\t1\t6\t1\n282\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n283\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t4\n284\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n285\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n286\tmarzo\t10150\t2\t3\t1\t0\t2\t4\t1\t1\t1\t1\t0\t1\t2\t4\n287\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n288\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n289\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n290\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n291\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n292\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n293\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n294\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n295\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n296\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n297\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n298\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n299\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n300\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n301\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n302\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n303\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t5\t7\t1\t0\t1\t3\t4\n304\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n305\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n306\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n307\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n308\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n309\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n310\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n311\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n312\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n313\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n314\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n315\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n316\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n317\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n318\tenero\t10150\t2\t1\t2\t0\t1\t2\t1\t2\t1\t1\t0\t1\t4\t4\n319\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n320\tfebrero\t10150\t2\t1\t3\t0\t2\t1\t1\t2\t3\t1\t0\t1\t4\t1\n321\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n322\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t3\n323\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n324\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n325\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n326\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n327\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n328\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n329\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n330\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n331\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n332\tenero\t10150\t2\t1\t2\t0\t1\t4\t1\t1\t1\t1\t0\t1\t2\t1\n333\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n334\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n335\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n336\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n337\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n338\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n339\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n340\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n341\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n342\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n343\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n344\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n345\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t5\n346\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n347\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t2\t1\t1\t0\t1\t6\t1\n348\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n349\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t3\t1\t1\t0\t1\t2\t1\n350\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n351\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n352\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n353\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n354\tfebrero\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t3\t4\n355\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n356\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t1\t1\t0\t1\t4\t1\n357\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n358\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t1\t1\t0\t1\t4\t4\n359\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t1\t1\n360\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n361\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n362\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t5\n363\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n364\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n365\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t5\n366\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n367\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n368\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n369\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n370\tfebrero\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t6\t5\n371\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n372\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n373\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n374\tfebrero\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t5\n375\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n376\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n377\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n378\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n379\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n380\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n381\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n382\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n383\tfebrero\t10150\t2\t1\t2\t0\t1\t3\t1\t2\t1\t1\t0\t1\t1\t5\n384\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n385\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t3\n386\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n387\tfebrero\t10150\t2\t5\t1\t1\t3\t3\t1\t1\t1\t1\t3\t1\t3\t5\n388\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n389\tmarzo\t10150\t2\t2\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n390\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n391\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n392\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n393\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t5\n394\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t6\n395\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n396\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t4\n397\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t3\n398\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t4\t5\n399\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n400\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n401\tfebrero\t10150\t2\t1\t4\t0\t1\t1\t1\t4\t1\t4\t0\t1\t2\t5\n402\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n403\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n404\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t1\n405\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t5\n406\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n407\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n408\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t1\t1\t0\t1\t4\t4\n409\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t3\t1\t0\t1\t3\t1\n410\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n411\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n412\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n413\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n414\tfebrero\t10150\t2\t1\t5\t0\t1\t3\t1\t7\t4\t1\t0\t1\t3\t1\n415\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n416\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t2\t4\n417\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n418\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n419\tfebrero\t10150\t2\t1\t3\t0\t2\t6\t1\t1\t1\t1\t0\t1\t3\t5\n420\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n421\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n422\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t1\t1\t0\t1\t4\t5\n423\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n424\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n425\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n426\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n427\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n428\tmarzo\t10150\t2\t1\t2\t0\t2\t1\t1\t2\t1\t1\t0\t1\t3\t1\n429\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n430\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n431\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n432\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n433\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n434\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n435\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n436\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n437\tfebrero\t10150\t1\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n438\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t5\n439\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n440\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n441\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n442\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n443\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t3\n444\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n445\tmarzo\t10150\t2\t1\t3\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n446\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n447\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n448\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t3\t1\n449\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n450\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t3\n451\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n452\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n453\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n454\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n455\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n456\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n457\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t3\t1\t1\t0\t1\t4\t4\n458\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n459\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n460\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n461\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n462\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n463\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n464\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n465\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n466\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n467\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t2\t1\t0\t1\t4\t5\n468\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n469\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n470\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n471\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t6\t1\n472\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n473\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n474\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n475\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n476\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n477\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t3\t1\t0\t1\t4\t5\n478\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n479\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n480\tmarzo\t10150\t2\t3\t4\t0\t1\t3\t1\t4\t4\t1\t0\t1\t3\t5\n481\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n482\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n483\tmarzo\t10150\t2\t2\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n484\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t5\n485\tmarzo\t10150\t2\t1\t1\t0\t2\t3\t1\t1\t1\t4\t0\t1\t2\t5\n486\tmarzo\t10150\t2\t2\t5\t0\t1\t3\t1\t5\t4\t1\t0\t1\t3\t4\n487\tenero\t10150\t2\t1\t2\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t1\n488\tenero\t10150\t2\t2\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n489\tmarzo\t10150\t1\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t4\t4\n490\tmarzo\t10150\t2\t2\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t4\n491\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t4\n492\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n493\tenero\t10150\t2\t1\t3\t0\t1\t3\t1\t2\t1\t1\t0\t1\t3\t5\n494\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n495\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t3\t4\n496\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n497\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n498\tmarzo\t10150\t2\t2\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t1\t5\n499\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n500\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n501\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t2\t1\n502\tenero\t10150\t2\t2\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n503\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n504\tenero\t10150\t2\t2\t3\t0\t2\t1\t1\t4\t3\t1\t0\t1\t6\t1\n505\tenero\t10150\t2\t1\t3\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n506\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n507\tenero\t10150\t2\t2\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t2\t4\n508\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t3\t1\t0\t1\t2\t1\n509\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n510\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n511\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n512\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t3\t2\t5\n513\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t1\t1\t0\t1\t2\t4\n514\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t3\t1\t0\t1\t6\t1\n515\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t3\t1\t0\t1\t4\t5\n516\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t6\n517\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n518\tenero\t10150\t2\t1\t3\t0\t2\t2\t1\t1\t1\t1\t0\t1\t3\t1\n519\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n520\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t3\t0\t1\t4\t4\n521\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n522\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n523\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t4\t4\n524\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n525\tmarzo\t10150\t2\t2\t3\t0\t1\t3\t1\t4\t1\t1\t0\t1\t6\t5\n526\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n527\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t3\n528\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t3\t5\n529\tmarzo\t10150\t2\t1\t4\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n530\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t4\n531\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n532\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n533\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n534\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t4\n535\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n536\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n537\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n538\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n539\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n540\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n541\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n542\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n543\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n544\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n545\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t3\n546\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n547\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t5\n548\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n549\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n550\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t5\n551\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n552\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t5\n553\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n554\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t1\t3\t0\t1\t1\t4\n555\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n556\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t4\t4\n557\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n558\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n559\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n560\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n561\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n562\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t3\n563\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n564\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n565\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t3\t1\t0\t1\t4\t4\n566\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t4\t5\n567\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n568\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n569\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t6\t5\n570\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t3\t2\t4\n571\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n572\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n573\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t3\t0\t1\t2\t4\n574\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n575\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t1\t1\n576\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n577\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t1\t1\t0\t1\t1\t1\n578\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n579\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n580\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n581\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t4\n582\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n583\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n584\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n585\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n586\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n587\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n588\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t4\t1\n589\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n590\tmarzo\t10150\t2\t1\t4\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n591\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n592\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t3\n593\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n594\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n595\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n596\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n597\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t3\t4\n598\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n599\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n600\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n601\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n602\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n603\tenero\t10150\t2\t1\t4\t0\t1\t3\t1\t4\t1\t1\t0\t1\t3\t5\n604\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n605\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n606\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n607\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t3\t0\t1\t6\t4\n608\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n609\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n610\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n611\tmarzo\t10150\t2\t1\t4\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n612\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n613\tenero\t10150\t2\t1\t2\t0\t2\t3\t1\t2\t1\t1\t0\t1\t6\t5\n614\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t3\n615\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n616\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n617\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n618\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n619\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n620\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n621\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n622\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n623\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n624\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n625\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n626\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n627\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n628\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n629\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t3\t1\t1\t0\t1\t2\t4\n630\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t2\t5\n631\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t4\n632\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t1\n633\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n634\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n635\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n636\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t3\t5\n637\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n638\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n639\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t3\t1\t2\t0\t1\t6\t4\n640\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n641\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n642\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n643\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n644\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n645\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n646\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n647\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n648\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n649\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n650\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n651\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n652\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n653\tenero\t10150\t2\t1\t1\t0\t2\t1\t1\t1\t1\t1\t0\t1\t2\t4\n654\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n655\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t5\n656\tenero\t10150\t2\t1\t1\t0\t2\t1\t1\t1\t1\t1\t0\t1\t2\t5\n657\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n658\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t3\n659\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n660\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n661\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t1\n662\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n663\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n664\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n665\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n666\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n667\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n668\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n669\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t5\n670\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n671\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n672\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n673\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t3\n674\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n675\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n676\tenero\t10150\t2\t1\t4\t0\t1\t1\t1\t1\t3\t1\t0\t1\t3\t1\n677\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t5\n678\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n679\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n680\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n681\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n682\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n683\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n684\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n685\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n686\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n687\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n688\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n689\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n690\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n691\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t3\n692\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n693\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n694\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t4\t4\n695\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n696\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n697\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n698\tenero\t10150\t2\t1\t1\t0\t1\t2\t1\t2\t1\t1\t0\t1\t2\t4\n699\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t4\t1\n700\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n701\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n702\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t4\n703\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n704\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t4\n705\tenero\t10150\t2\t2\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t3\t4\n706\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n707\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n708\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n709\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t3\n710\tenero\t10150\t2\t2\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t1\n711\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n712\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n713\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n714\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n715\tenero\t10150\t2\t1\t1\t0\t1\t2\t1\t1\t1\t1\t0\t1\t4\t4\n716\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t3\n717\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n718\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t4\n719\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n720\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n721\tfebrero\t10150\t1\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n722\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t4\t4\n723\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t3\t1\t0\t1\t4\t1\n724\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n725\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n726\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n727\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n728\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n729\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n730\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t5\n731\tenero\t10150\t2\t1\t4\t0\t1\t1\t1\t5\t5\t1\t0\t1\t4\t1\n732\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n733\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n734\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n735\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n736\tfebrero\t10150\t2\t1\t3\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t1\n737\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t1\t1\t0\t1\t3\t4\n738\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n739\tmarzo\t10150\t2\t2\t1\t0\t1\t3\t1\t5\t3\t1\t0\t1\t1\t4\n740\tenero\t10150\t2\t1\t2\t0\t1\t3\t1\t2\t1\t1\t0\t1\t1\t4\n741\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n742\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n743\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n744\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n745\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n746\tfebrero\t10150\t2\t1\t3\t0\t2\t1\t1\t4\t1\t1\t0\t1\t6\t1\n747\tmarzo\t10150\t2\t1\t4\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t1\n748\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t3\t1\t0\t1\t2\t4\n749\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n750\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n751\tenero\t10150\t2\t2\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t3\t4\n752\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t2\t1\t0\t1\t4\t4\n753\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n754\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t2\t4\n755\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t2\t4\n756\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t4\t4\n757\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n758\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t3\t1\t0\t1\t2\t4\n759\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t4\n760\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n761\tfebrero\t10150\t2\t1\t2\t0\t2\t3\t1\t2\t1\t1\t0\t1\t1\t4\n762\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n763\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t2\t0\t1\t2\t4\n764\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n765\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t4\n766\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t3\t1\t0\t1\t4\t4\n767\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n768\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n769\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t4\t4\n770\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n771\tmarzo\t10150\t2\t1\t4\t0\t1\t3\t1\t5\t4\t1\t0\t1\t3\t5\n772\tfebrero\t10150\t2\t1\t2\t0\t2\t1\t1\t1\t1\t1\t0\t1\t2\t5\n773\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t3\t4\t4\n774\tfebrero\t10150\t2\t1\t2\t0\t1\t3\t1\t2\t1\t1\t0\t1\t1\t1\n775\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t4\t4\n776\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t3\t0\t1\t2\t3\n777\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n778\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n779\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n780\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t4\t4\n781\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n782\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n783\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n784\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n785\tfebrero\t10150\t2\t1\t5\t0\t1\t1\t1\t7\t4\t1\t0\t1\t3\t4\n786\tfebrero\t10150\t2\t1\t3\t0\t2\t3\t1\t2\t1\t1\t0\t1\t3\t1\n787\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n788\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n789\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t1\n790\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t3\n791\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t4\t5\n792\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n793\tfebrero\t10150\t2\t1\t2\t0\t2\t1\t1\t2\t1\t1\t0\t1\t4\t1\n794\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t2\t5\n795\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n796\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n797\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n798\tfebrero\t10150\t2\t2\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n799\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n800\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n801\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n802\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n803\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n804\tmarzo\t10150\t2\t1\t3\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n805\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t3\t1\t0\t1\t4\t1\n806\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n807\tfebrero\t10150\t2\t1\t1\t0\t1\t3\t1\t5\t4\t1\t0\t1\t2\t5\n808\tmarzo\t10150\t2\t1\t3\t0\t1\t1\t1\t1\t1\t1\t0\t1\t3\t4\n809\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t3\t1\t0\t1\t6\t1\n810\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n811\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t4\t1\t1\t0\t1\t3\t1\n812\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t3\t1\t0\t1\t4\t4\n813\tenero\t10150\t1\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n814\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t3\t1\n815\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t3\t1\t0\t1\t6\t1\n816\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n817\tfebrero\t10150\t2\t1\t5\t0\t1\t3\t1\t5\t4\t1\t0\t1\t3\t3\n818\tmarzo\t10150\t2\t1\t3\t0\t2\t1\t1\t1\t1\t1\t0\t1\t6\t1\n819\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t5\t1\t1\t0\t1\t1\t5\n820\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n821\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t1\n822\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t3\n823\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n824\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t3\n825\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t1\t1\t0\t1\t2\t4\n826\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t3\t1\t0\t1\t1\t4\n827\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n828\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n829\tenero\t10150\t2\t1\t3\t0\t2\t1\t1\t2\t1\t1\t0\t1\t6\t1\n830\tmarzo\t10150\t2\t1\t2\t0\t1\t3\t1\t2\t1\t1\t0\t1\t1\t1\n831\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n832\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t5\n833\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n834\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n835\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n836\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t4\n837\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n838\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n839\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n840\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t3\n841\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n842\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n843\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n844\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n845\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n846\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t4\t3\t1\t0\t1\t4\t4\n847\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n848\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n849\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n850\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t5\t1\t1\t0\t1\t2\t4\n851\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n852\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n853\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t5\t1\t1\t0\t1\t2\t4\n854\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n855\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n856\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n857\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n858\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n859\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n860\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n861\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n862\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t4\t1\t0\t1\t2\t4\n863\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n864\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n865\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n866\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t5\n867\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t1\n868\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n869\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t3\n870\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n871\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n872\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n873\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n874\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n875\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n876\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t5\t3\t1\t0\t1\t4\t4\n877\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n878\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n879\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t6\n880\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n881\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n882\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n883\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n884\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n885\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n886\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n887\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n888\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t3\t4\n889\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n890\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n891\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n892\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n893\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n894\tmarzo\t10150\t2\t2\t1\t0\t2\t3\t1\t4\t3\t1\t0\t1\t4\t4\n895\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n896\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t4\n897\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n898\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t5\n899\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n900\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n901\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n902\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n903\tenero\t10150\t2\t1\t3\t0\t1\t1\t1\t4\t1\t4\t0\t1\t1\t5\n904\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n905\tmarzo\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n906\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n907\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n908\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t3\t1\t1\t0\t1\t2\t4\n909\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n910\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n911\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n912\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n913\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t1\t1\t1\t0\t1\t2\t4\n914\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n915\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n916\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t1\n917\tenero\t10150\t2\t1\t3\t0\t2\t3\t1\t1\t3\t1\t0\t1\t2\t5\n918\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n919\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t2\t4\n920\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t5\n921\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n922\tenero\t10150\t2\t1\t2\t0\t1\t3\t1\t1\t3\t1\t0\t1\t4\t4\n923\tenero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n924\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n925\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n926\tenero\t10150\t2\t1\t2\t0\t1\t3\t1\t4\t1\t1\t0\t1\t2\t1\n927\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t4\n928\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n929\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n930\tenero\t10150\t2\t2\t1\t0\t2\t3\t1\t1\t3\t1\t0\t1\t2\t4\n931\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n932\tenero\t10150\t2\t2\t1\t0\t2\t3\t1\t1\t3\t1\t0\t1\t2\t5\n933\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n934\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n935\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t3\t0\t1\t2\t1\n936\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t6\t4\n937\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t4\t3\t1\t0\t1\t6\t5\n938\tmarzo\t10150\t2\t1\t4\t0\t1\t1\t1\t1\t3\t1\t0\t1\t2\t4\n939\tmarzo\t10150\t1\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n940\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n941\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t3\n942\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n943\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n944\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n945\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n946\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n947\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n948\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t5\n949\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n950\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t1\n951\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n952\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t5\t3\t1\t0\t1\t3\t4\n953\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n954\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t3\t1\t0\t1\t4\t4\n955\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t7\t3\t1\t0\t1\t4\t4\n956\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t4\n957\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n958\tenero\t10150\t2\t1\t1\t0\t1\t3\t1\t2\t1\t1\t0\t1\t4\t4\n959\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n960\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t2\t3\n961\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t4\n962\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t1\n963\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t5\n964\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n965\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t4\t5\n966\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t3\t1\t0\t1\t2\t5\n967\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n968\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t3\t1\t0\t1\t4\t4\n969\tfebrero\t10150\t2\t1\t1\t0\t2\t1\t1\t2\t1\t1\t0\t1\t4\t1\n970\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t3\t0\t1\t2\t4\n971\tmarzo\t10150\t2\t1\t4\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n972\tfebrero\t10150\t2\t1\t1\t0\t2\t1\t1\t2\t1\t1\t0\t1\t4\t1\n973\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n974\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t5\n975\tfebrero\t10150\t2\t1\t4\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n976\tfebrero\t10150\t2\t1\t2\t0\t1\t2\t1\t2\t1\t1\t0\t1\t1\t1\n977\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t1\t4\n978\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n979\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t2\t1\t0\t1\t3\t1\n980\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n981\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t3\t1\t0\t1\t4\t4\n982\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t4\t1\t1\t0\t1\t2\t1\n983\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t4\n984\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n985\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t3\t5\n986\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t1\n987\tenero\t10150\t2\t1\t2\t0\t2\t1\t1\t1\t1\t1\t0\t1\t6\t1\n988\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n989\tmarzo\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n990\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n991\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t3\t0\t1\t2\t4\n992\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n993\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n994\tfebrero\t10150\t2\t1\t2\t0\t1\t1\t1\t2\t1\t1\t0\t1\t1\t1\n995\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n996\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t4\t4\n997\tenero\t10150\t2\t1\t3\t0\t1\t1\t1\t1\t1\t1\t0\t1\t6\t5\n998\tmarzo\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t1\n999\tenero\t10150\t2\t1\t1\t0\t1\t1\t1\t1\t1\t1\t0\t1\t2\t4\n1000\tfebrero\t10150\t2\t1\t1\t0\t1\t1\t1\t2\t1\t1\t0\t1\t2\t1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690781072768_659247642",
+      "id": "paragraph_1690781072768_659247642",
+      "dateCreated": "2023-07-31T00:24:32-0500",
+      "dateStarted": "2023-07-31T00:42:27-0500",
+      "dateFinished": "2023-07-31T00:42:27-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:502"
+    },
+    {
+      "text": "%mysql\nSELECT tipoHomicidio, COUNT(*) AS total_homicidios\nFROM homicidios\nGROUP BY tipoHomicidio;\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T00:42:27-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "des_via_acceso": "string",
+                      "total": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "tipoHomicidio\ttotal_homicidios\nASESINATO\t2649\nHOMICIDIO\t190\nFEMICIDIO\t48\nSICARIATO\t13\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690155663945_411747172",
+      "id": "paragraph_1689644944205_1578415937",
+      "dateCreated": "2023-07-23T18:41:03-0500",
+      "dateStarted": "2023-07-31T00:42:27-0500",
+      "dateFinished": "2023-07-31T00:42:27-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:503"
+    },
+    {
+      "text": "%mysql\nSELECT provincia, total\nFROM matrimonio\nORDER BY total DESC\nLIMIT 5;\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T01:03:51-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "provincia": "string",
+                      "total": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "provincia",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "total",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "provincia\ttotal\nCarchi\t905.0\nOrellana\t566.0\nSanto Domingo de los TsÃ¡chilas\t503.0\nNapo\t503.0\nCaÃ±ar\t496.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690155663946_598545375",
+      "id": "paragraph_1689644976975_1371071496",
+      "dateCreated": "2023-07-23T18:41:03-0500",
+      "dateStarted": "2023-07-31T00:42:27-0500",
+      "dateFinished": "2023-07-31T00:42:27-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:504"
+    },
+    {
+      "text": "%mysql\nSELECT\n  m.provincia,\n  m.total AS total_marriages,\n  f.total AS total_population\nFROM matrimonio m\nJOIN fallecidos f ON m.cod_provincia = f.cod_provincia\nORDER BY total_marriages DESC;\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T01:04:15-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "provincia": "string",
+                      "total_marriages": "string",
+                      "total_population": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "provincia",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "total_marriages",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "provincia\ttotal_marriages\ttotal_population\nCarchi\t905.0\t1.226\nOrellana\t566.0\t689.0\nSanto Domingo de los TsÃ¡chilas\t503.0\t2.848\nNapo\t503.0\t582.0\nCaÃ±ar\t496.0\t1.632\nCotopaxi\t415.0\t3.01\nGalÃ¡pagos\t363.0\t82.0\nPastaza\t316.0\t465.0\nPichincha\t306.0\t18.464\nSucumbÃ­os\t197.0\t980.0\nAzuay\t55.339\t5.076\nImbabura\t15.369\t2.942\nTungurahua\t10.649\t4.118\nMorona Santiago\t4.105\t726.0\nBolÃ­var\t2.769\t1.41\nEl Oro\t2.198\t4.996\nEsmeraldas\t2.121\t2.763\nZamora Chinchipe\t2.111\t522.0\nManabÃ­\t2.039\t9.782\nChimborazo\t1.928\t3.406\nLoja\t1.783\t3.529\nSanta Elena\t1.546\t1.972\nLos RÃ­os\t1.474\t5.777\nGuayas\t1.259\t28.222\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690783446364_1795518284",
+      "id": "paragraph_1690783446364_1795518284",
+      "dateCreated": "2023-07-31T01:04:06-0500",
+      "dateStarted": "2023-07-31T01:04:09-0500",
+      "dateFinished": "2023-07-31T01:04:10-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:505"
+    },
+    {
+      "text": "%mysql\nSELECT d.provincia, COUNT(v.num_hogar) AS total_households, AVG(v.num_cuartos) AS average_rooms_per_household\nFROM vivienda v\nJOIN desc_ciudad d ON v.id_vivienda = d.codigo\nGROUP BY d.provincia;\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T01:00:19-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "provincia": "string",
+                      "total_households": "string",
+                      "average_rooms_per_household": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "provincia",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "total_households",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "provincia\ttotal_households\taverage_rooms_per_household\nAZUAY\t75\t3.0667\nBOLIVAR\t26\t3.4231\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690155663952_134262703",
+      "id": "paragraph_1689954660118_1905844664",
+      "dateCreated": "2023-07-23T18:41:03-0500",
+      "dateStarted": "2023-07-31T00:49:54-0500",
+      "dateFinished": "2023-07-31T00:49:54-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:506"
+    },
+    {
+      "text": "%mysql\nSELECT\n  d.provincia,\n  COUNT(v.num_hogar) AS total_households,\n  SUM(v.num_cuatos_dormir) AS total_bedrooms,\n  SUM(v.num_cuartos_cocina) AS total_kitchen_rooms,\n  AVG(v.num_cuartos) AS average_rooms_per_household,\n  MAX(v.num_vehiculos) AS max_vehicles_per_household,\n  MIN(v.num_vehiculos) AS min_vehicles_per_household\nFROM vivienda v\nJOIN desc_ciudad d ON v.id_vivienda = d.codigo\nGROUP BY d.provincia;\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T01:19:15-0500",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "provincia": "string",
+                      "total_households": "string",
+                      "total_bedrooms": "string",
+                      "total_kitchen_rooms": "string",
+                      "average_rooms_per_household": "string",
+                      "max_vehicles_per_household": "string",
+                      "min_vehicles_per_household": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "provincia",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "total_households",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "provincia\ttotal_households\ttotal_bedrooms\ttotal_kitchen_rooms\taverage_rooms_per_household\tmax_vehicles_per_household\tmin_vehicles_per_household\nAZUAY\t75\t155\t79\t3.0667\t2\t1\nBOLIVAR\t26\t62\t26\t3.4231\t2\t1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690782634012_787901868",
+      "id": "paragraph_1690782634012_787901868",
+      "dateCreated": "2023-07-31T00:50:34-0500",
+      "dateStarted": "2023-07-31T00:59:49-0500",
+      "dateFinished": "2023-07-31T00:59:49-0500",
+      "status": "FINISHED",
+      "$$hashKey": "object:507"
+    },
+    {
+      "text": "%mysql\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-31T00:58:40-0500",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690783120804_696323241",
+      "id": "paragraph_1690783120804_696323241",
+      "dateCreated": "2023-07-31T00:58:40-0500",
+      "status": "READY",
+      "$$hashKey": "object:508"
+    }
+  ],
+  "name": "ProyectoIntegrador",
+  "id": "2J7R6UBQJ",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/ProyectoIntegrador"
+}
