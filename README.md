@@ -15,7 +15,7 @@ El repositorio está organizado de la siguiente manera:
 
 - Jhandry Solorzano
 - Isaac Quezada
-- Diego Jumbo (Programacion Funcional Avanzada)
+
 
 ## Periodo Académico
 Abril 2023 - Agosto 2023
